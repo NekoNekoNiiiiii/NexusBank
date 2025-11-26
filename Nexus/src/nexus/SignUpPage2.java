@@ -106,7 +106,9 @@ public class SignUpPage2 extends javax.swing.JFrame {
     }//GEN-LAST:event_jLabel2MouseClicked
 
     private void Login_LabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Login_LabelMouseClicked
-        // TODO add your handling code here:
+        Login newpage = new Login();
+        newpage.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_Login_LabelMouseClicked
 
     /**

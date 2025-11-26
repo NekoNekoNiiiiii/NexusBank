@@ -117,7 +117,9 @@ public class SignUp extends javax.swing.JFrame {
     }//GEN-LAST:event_FullName_TextFieldActionPerformed
 
     private void Login_LabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Login_LabelMouseClicked
-        // TODO add your handling code here:
+        Login newpage = new Login();
+        newpage.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_Login_LabelMouseClicked
 
     private void NextPage_ButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_NextPage_ButtonMouseClicked
