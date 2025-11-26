@@ -85,6 +85,7 @@ public class UserDashboard extends javax.swing.JFrame {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void PayBills_ButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PayBills_ButtonMouseClicked

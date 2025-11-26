@@ -38,7 +38,6 @@ public class Login extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMaximumSize(new java.awt.Dimension(1080, 607));
         setMinimumSize(new java.awt.Dimension(1080, 607));
-        setPreferredSize(new java.awt.Dimension(1080, 607));
 
         jPanel1.setMaximumSize(new java.awt.Dimension(1080, 607));
         jPanel1.setMinimumSize(new java.awt.Dimension(1080, 607));
@@ -81,7 +80,7 @@ public class Login extends javax.swing.JFrame {
         });
         jPanel1.add(SignUp_Label, new org.netbeans.lib.awtextra.AbsoluteConstraints(897, 465, 50, 20));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/nexus/image/LoginPage.png"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/nexus/image/LoginPage2.png"))); // NOI18N
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1080, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());

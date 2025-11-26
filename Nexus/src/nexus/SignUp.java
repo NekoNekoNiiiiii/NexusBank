@@ -41,7 +41,6 @@ public class SignUp extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMaximumSize(new java.awt.Dimension(522, 607));
         setMinimumSize(new java.awt.Dimension(522, 607));
-        setPreferredSize(new java.awt.Dimension(522, 607));
         setSize(new java.awt.Dimension(522, 607));
 
         jPanel1.setMaximumSize(new java.awt.Dimension(522, 607));
