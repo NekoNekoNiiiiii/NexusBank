@@ -29,10 +29,10 @@ public class UserDashboard extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        PayBills_Button = new javax.swing.JLabel();
+        ApplyNewAccount_Button = new javax.swing.JLabel();
         CashTransfer_Button = new javax.swing.JLabel();
         Withdraw_Button = new javax.swing.JLabel();
-        NewBankAccount = new javax.swing.JLabel();
+        Deposit_Button = new javax.swing.JLabel();
         Menu_Button = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
@@ -41,12 +41,12 @@ public class UserDashboard extends javax.swing.JFrame {
 
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        PayBills_Button.addMouseListener(new java.awt.event.MouseAdapter() {
+        ApplyNewAccount_Button.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                PayBills_ButtonMouseClicked(evt);
+                ApplyNewAccount_ButtonMouseClicked(evt);
             }
         });
-        jPanel1.add(PayBills_Button, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 113, 95, 96));
+        jPanel1.add(ApplyNewAccount_Button, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 113, 95, 96));
 
         CashTransfer_Button.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -62,12 +62,12 @@ public class UserDashboard extends javax.swing.JFrame {
         });
         jPanel1.add(Withdraw_Button, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 358, 95, 96));
 
-        NewBankAccount.addMouseListener(new java.awt.event.MouseAdapter() {
+        Deposit_Button.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                NewBankAccountMouseClicked(evt);
+                Deposit_ButtonMouseClicked(evt);
             }
         });
-        jPanel1.add(NewBankAccount, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 480, 95, 96));
+        jPanel1.add(Deposit_Button, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 480, 95, 96));
         jPanel1.add(Menu_Button, new org.netbeans.lib.awtextra.AbsoluteConstraints(924, 22, 130, 59));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/nexus/image/UserDashboard.png"))); // NOI18N
@@ -88,21 +88,25 @@ public class UserDashboard extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void PayBills_ButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PayBills_ButtonMouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_PayBills_ButtonMouseClicked
+    private void ApplyNewAccount_ButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ApplyNewAccount_ButtonMouseClicked
+        NewAccount page6 = new NewAccount();
+        page6.setVisible(true);
+    }//GEN-LAST:event_ApplyNewAccount_ButtonMouseClicked
 
     private void CashTransfer_ButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CashTransfer_ButtonMouseClicked
-        // TODO add your handling code here:
+        Transfer page7 = new Transfer();
+        page7.setVisible(true);
     }//GEN-LAST:event_CashTransfer_ButtonMouseClicked
 
     private void Withdraw_ButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Withdraw_ButtonMouseClicked
-        // TODO add your handling code here:
+        Withdraw page8 = new Withdraw();
+        page8.setVisible(true);
     }//GEN-LAST:event_Withdraw_ButtonMouseClicked
 
-    private void NewBankAccountMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_NewBankAccountMouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_NewBankAccountMouseClicked
+    private void Deposit_ButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Deposit_ButtonMouseClicked
+        Deposit page9 = new Deposit();
+        page9.setVisible(true);
+    }//GEN-LAST:event_Deposit_ButtonMouseClicked
 
     /**
      * @param args the command line arguments
@@ -130,10 +134,10 @@ public class UserDashboard extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel ApplyNewAccount_Button;
     private javax.swing.JLabel CashTransfer_Button;
+    private javax.swing.JLabel Deposit_Button;
     private javax.swing.JLabel Menu_Button;
-    private javax.swing.JLabel NewBankAccount;
-    private javax.swing.JLabel PayBills_Button;
     private javax.swing.JLabel Withdraw_Button;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;

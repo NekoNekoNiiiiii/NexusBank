@@ -33,12 +33,11 @@ public class SignUpPage2 extends javax.swing.JFrame {
         Gender_TextField = new javax.swing.JTextField();
         GovernmentIssuedID_TextField = new javax.swing.JTextField();
         BirthDate_TextField = new javax.swing.JTextField();
-        jLabel2 = new javax.swing.JLabel();
+        SignUp_Button = new javax.swing.JLabel();
         Login_Label = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setMaximumSize(new java.awt.Dimension(521, 607));
         setMinimumSize(new java.awt.Dimension(521, 607));
 
         jPanel1.setMaximumSize(new java.awt.Dimension(521, 607));
@@ -66,12 +65,12 @@ public class SignUpPage2 extends javax.swing.JFrame {
         BirthDate_TextField.setBorder(null);
         jPanel1.add(BirthDate_TextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(109, 352, 320, 39));
 
-        jLabel2.addMouseListener(new java.awt.event.MouseAdapter() {
+        SignUp_Button.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel2MouseClicked(evt);
+                SignUp_ButtonMouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(185, 422, 148, 46));
+        jPanel1.add(SignUp_Button, new org.netbeans.lib.awtextra.AbsoluteConstraints(185, 422, 148, 46));
 
         Login_Label.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -100,9 +99,11 @@ public class SignUpPage2 extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jLabel2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jLabel2MouseClicked
+    private void SignUp_ButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SignUp_ButtonMouseClicked
+        Login page1 = new Login();
+        page1.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_SignUp_ButtonMouseClicked
 
     private void Login_LabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Login_LabelMouseClicked
         Login newpage = new Login();
@@ -141,8 +142,8 @@ public class SignUpPage2 extends javax.swing.JFrame {
     private javax.swing.JTextField Gender_TextField;
     private javax.swing.JTextField GovernmentIssuedID_TextField;
     private javax.swing.JLabel Login_Label;
+    private javax.swing.JLabel SignUp_Button;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }

@@ -33,10 +33,10 @@ public class Login extends javax.swing.JFrame {
         LoginPassword_TextField = new javax.swing.JTextField();
         Login_Button = new javax.swing.JLabel();
         SignUp_Label = new javax.swing.JLabel();
+        Admin_Lever = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setMaximumSize(new java.awt.Dimension(1080, 607));
         setMinimumSize(new java.awt.Dimension(1080, 607));
 
         jPanel1.setMaximumSize(new java.awt.Dimension(1080, 607));
@@ -80,6 +80,13 @@ public class Login extends javax.swing.JFrame {
         });
         jPanel1.add(SignUp_Label, new org.netbeans.lib.awtextra.AbsoluteConstraints(897, 465, 50, 20));
 
+        Admin_Lever.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Admin_LeverMouseClicked(evt);
+            }
+        });
+        jPanel1.add(Admin_Lever, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 150, 200, 40));
+
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/nexus/image/LoginPage2.png"))); // NOI18N
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1080, -1));
 
@@ -103,18 +110,25 @@ public class Login extends javax.swing.JFrame {
     }//GEN-LAST:event_LoginPassword_TextFieldActionPerformed
 
     private void Login_ButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Login_ButtonMouseClicked
-        // TODO add your handling code here:
+        UserDashboard page4 = new UserDashboard();
+        page4.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_Login_ButtonMouseClicked
 
     private void SignUp_LabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SignUp_LabelMouseClicked
         SignUp page2 = new SignUp();
         page2.setVisible(true);
-        this.dispose();
     }//GEN-LAST:event_SignUp_LabelMouseClicked
 
     private void LoginEmail_TextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LoginEmail_TextFieldActionPerformed
-        // TODO add your handling code here:
+        
     }//GEN-LAST:event_LoginEmail_TextFieldActionPerformed
+
+    private void Admin_LeverMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Admin_LeverMouseClicked
+        AdminPanel page5 = new AdminPanel();
+        page5.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_Admin_LeverMouseClicked
 
     /**
      * @param args the command line arguments
@@ -142,6 +156,7 @@ public class Login extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel Admin_Lever;
     private javax.swing.JTextField LoginEmail_TextField;
     private javax.swing.JTextField LoginPassword_TextField;
     private javax.swing.JLabel Login_Button;

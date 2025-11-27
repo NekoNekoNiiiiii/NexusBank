@@ -8,14 +8,14 @@ package nexus;
  *
  * @author Daniel Caballero
  */
-public class AdminPanel extends javax.swing.JFrame {
+public class AuditAndReporting extends javax.swing.JFrame {
     
-    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(AdminPanel.class.getName());
+    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(AuditAndReporting.class.getName());
 
     /**
-     * Creates new form AdminPanel
+     * Creates new form AuditAndReporting
      */
-    public AdminPanel() {
+    public AuditAndReporting() {
         initComponents();
     }
 
@@ -29,51 +29,41 @@ public class AdminPanel extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
+        Back_Button = new javax.swing.JLabel();
         AccountManagement_Button = new javax.swing.JLabel();
         TransactionLogs_Button = new javax.swing.JLabel();
-        AuditAndReporting_Button = new javax.swing.JLabel();
-        LogOut_Button = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(1080, 607));
-        setResizable(false);
 
         jPanel1.setMaximumSize(new java.awt.Dimension(1080, 607));
         jPanel1.setMinimumSize(new java.awt.Dimension(1080, 607));
         jPanel1.setPreferredSize(new java.awt.Dimension(1080, 607));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        Back_Button.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Back_ButtonMouseClicked(evt);
+            }
+        });
+        jPanel1.add(Back_Button, new org.netbeans.lib.awtextra.AbsoluteConstraints(908, 24, 150, 49));
+
         AccountManagement_Button.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 AccountManagement_ButtonMouseClicked(evt);
             }
         });
-        jPanel1.add(AccountManagement_Button, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 224, 89, 89));
+        jPanel1.add(AccountManagement_Button, new org.netbeans.lib.awtextra.AbsoluteConstraints(45, 153, 104, 104));
 
         TransactionLogs_Button.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 TransactionLogs_ButtonMouseClicked(evt);
             }
         });
-        jPanel1.add(TransactionLogs_Button, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 346, 89, 89));
+        jPanel1.add(TransactionLogs_Button, new org.netbeans.lib.awtextra.AbsoluteConstraints(45, 294, 104, 104));
 
-        AuditAndReporting_Button.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                AuditAndReporting_ButtonMouseClicked(evt);
-            }
-        });
-        jPanel1.add(AuditAndReporting_Button, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 467, 89, 89));
-
-        LogOut_Button.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                LogOut_ButtonMouseClicked(evt);
-            }
-        });
-        jPanel1.add(LogOut_Button, new org.netbeans.lib.awtextra.AbsoluteConstraints(908, 24, 150, 49));
-
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/nexus/image/AdminPanel.png"))); // NOI18N
-        jLabel1.setToolTipText("");
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/nexus/image/AuditAndReporting.png"))); // NOI18N
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -92,8 +82,13 @@ public class AdminPanel extends javax.swing.JFrame {
         );
 
         pack();
-        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void Back_ButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Back_ButtonMouseClicked
+        AdminPanel page5 = new AdminPanel();
+        page5.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_Back_ButtonMouseClicked
 
     private void AccountManagement_ButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AccountManagement_ButtonMouseClicked
         AdminAccount page5_3 = new AdminAccount();
@@ -106,18 +101,6 @@ public class AdminPanel extends javax.swing.JFrame {
         page5_1.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_TransactionLogs_ButtonMouseClicked
-
-    private void AuditAndReporting_ButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AuditAndReporting_ButtonMouseClicked
-        AuditAndReporting page5_2 = new AuditAndReporting();
-        page5_2.setVisible(true);
-        this.dispose();
-    }//GEN-LAST:event_AuditAndReporting_ButtonMouseClicked
-
-    private void LogOut_ButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_LogOut_ButtonMouseClicked
-        Login page1 = new Login();
-        page1.setVisible(true);
-        this.dispose();
-    }//GEN-LAST:event_LogOut_ButtonMouseClicked
 
     /**
      * @param args the command line arguments
@@ -141,13 +124,12 @@ public class AdminPanel extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(() -> new AdminPanel().setVisible(true));
+        java.awt.EventQueue.invokeLater(() -> new AuditAndReporting().setVisible(true));
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel AccountManagement_Button;
-    private javax.swing.JLabel AuditAndReporting_Button;
-    private javax.swing.JLabel LogOut_Button;
+    private javax.swing.JLabel Back_Button;
     private javax.swing.JLabel TransactionLogs_Button;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
